@@ -40,7 +40,7 @@ export const query = graphql`
     }
     lessons: allMdx(
       filter: { frontmatter: { path: { regex: $lessonRegex } } }
-      sort: { fields: frontmatter___start }
+      sort: { fields: [frontmatter___start, frontmatter__title] }
     ) {
       edges {
         node {
