@@ -1,0 +1,111 @@
+import slideTheme from "../../components/slideTheme"
+export const theme = slideTheme
+
+# Sending Binary Messages with the Internet Simulator
+
+---
+
+## Vocabulary
+
+- **Protocol**: A set of rules governing the exchange or transmission of data between devices.
+    - For our purposes today a "protocol" is simply a set of rules about sending, receiving and interpreting binary messages.
+
+- **Bit**: A contraction of "Binary Digit"; the single unit of information in a computer, typically represented as a 0 or 1
+    - We will call each element of a binary message a bit. "Bit" is short for binary digit. So for example if you have a binary message A B B A, we would say that is a 4-bit message.
+
+---
+
+## Flashlight Test
+
+"Imagine that you and your friend have made a binary signaling protocol using a flashlight. The light on is state A, off is state B."
+
+[Flashlight Test](https://docs.google.com/presentation/d/1juvbxu1begVxgiVcGMHsGv4QuunxdHFJwT-TVR8wZuc/edit#slide=id.g12976fcfcc_0_71)
+
+---
+
+## Test 1
+
+"Your friend sends you this message. What is being signaled here? Write down what you think the message is."
+
+> Discuss with your neighbor what you think the message is
+
+---
+
+## Test 2
+
+"Uh oh! Your friend realizes she actually made a mistake encoding the message from before and decides to re-send the message. Decode this new version of the message and write it down."
+
+> Discuss with your neighbor what you think the message is
+
+---
+
+## Discussion
+
+- Did this new message make you think about your answer to the first question? Do you want to change your answer to the first question?
+- What assumptions did you make in interpreting these messages?
+- Is this protocol specific enough to allow useful communication of a binary message? If not what information would need to be added to it?
+
+---
+
+# Code.org
+
+Navigate to [Code.org](https://code.org), create an account, and wait for further instructions
+
+---
+
+## The Internet Simulator
+
+Get into groups of two and each of you need to navigate to Unit 1 Lesson 3 and start up the internet simulator. 
+
+> I'm going to give you around 5 minutes to explore this tool and see what you can friend
+
+> **Note** You cannot break this so don't be afraid to explore
+
+---
+
+## How does it work? 
+
+[Internet Simulator Video](https://youtu.be/Kn6Fd5uwZno)
+
+---
+
+## Developing a Protocol
+
+You and your partner need to design a *protocol* for sending a sequence of bits back and forth to each other
+
+Start out with 2-bits and see if you can work your way up to 8-bits. 
+
+Your protocol **MUST** recieve bits and send the same bits back.
+
+---
+
+## The 2-bit Message Challenge
+
+- Each initial sender should be able to confirm that the message was received correctly and resent because the message that they have received is the same as the original.
+- As students iterate and perfect their protocol, they should try to extend their protocol to send more bits or send them more quickly, while maintaining accuracy. When each group has a working protocol and has time to practice (~10 minutes), have an all-class showdown to see who can do it the fastest
+
+---
+
+### Rules: 
+
+- Student pairs can decide who sends first.
+- Teacher reveals sequence of bits to be sent. Partner A of each group may enter this sequence of bits into Internet Simulator but may not begin sending them.
+- Teacher will say “GO” and partners will exchange messages.
+- During the challenge students may not communicate with one another. (Note: feel free to put partners on opposite sides of a room or in separate rooms altogether.)
+- Students yell “STOP” once they have completed their exchange.
+- Teacher will verify that each partner received what the other sent by checking outgoing and incoming messages.
+
+---
+
+## Wrap-up
+
+[The Internet: Wires, Cables, and WiFi](https://www.youtube.com/watch?v=ZhEf7e4kopM)
+
+---
+
+## Discussion
+
+- How has today’s activity added to or altered your definition of a bit?
+- A major focus of today’s activity was timing and coordination. What things did you need to coordinate or agree about ahead of time in order for your protocol to work?
+- What is the best bit rate you were able to achieve? What would it take to go faster?
+- How fast do you think computers transmit bits?
