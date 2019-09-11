@@ -49,7 +49,7 @@ export const query = graphql`
       filter: {
         frontmatter: { start: { ne: null }, path: { regex: "/lesson/" } }
       }
-      sort: { fields: [frontmatter___start, frontmatter__title] }
+      sort: { fields: [frontmatter___start, frontmatter___title] }
     ) {
       edges {
         node {
