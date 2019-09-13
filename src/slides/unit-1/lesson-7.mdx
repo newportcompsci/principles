@@ -1,0 +1,54 @@
+import slideTheme from "../../components/slideTheme"
+export const theme = slideTheme
+
+## Sending Text
+
+---
+
+## Warm-Up
+
+> When we communicate on the Internet we're not usually sending numbers back and forth, we're sending text! The version of the Internet Simulator you're using only lets you send numbers, but that doesn't mean we can't figure out our own way to send text.
+
+> We'll be doing a series of challenges. Before each one I will give you a chance to talk to your partner. Then I'll give one member of each group a short text message like the ones on the board. Your job will be to create an encoding system that will allow you to send that message. As always this will need to be done silently, with no communication except through the Internet Simulator.
+
+---
+
+## Code.org
+
+> Navigate to Unit 1 Lesson 7, the Internet Simulator and poke around for a bit.
+
+---
+
+## Challenges
+
+- You and your partner are going to use the system that you came up with in the warm-up to send messages back and forth. 
+- One of  you will be given a message and you will have to send that message using the internet simulator **WITHOUT** talking!
+- Between each challenge you will have a moment to discuss what was hard
+
+---
+
+### American Standard Code for Information Interchange (ASCII)
+
+Take a look at the ASCII character character
+
+![ASCII Chart](https://www.ibm.com/support/knowledgecenter/en/SSLTBW_2.3.0/com.ibm.zos.v2r3.ioaq100/ascii_table.gif)
+
+> How is it similar / different than what you came up with? 
+
+---
+
+## Wrap-up 
+
+> An interesting point of this lesson is that sometimes when representing information on a computer we can "forget the bits" even though we know that's how all information is being represented.
+
+- When in today's lesson is it OK to "forget the bits"?
+- When or why did we need to remember that information is represented in bits? 
+
+---
+
+## Wrap-up (continued)
+
+- Binary and decimal numbers can be converted back and forth
+- It's usually easier to think of representing other things, like characters, as decimal numbers first. We ignore the underlying detail that the decimal number needs to be converted to bits (binary) to actually send on a computer.
+- We usually only think about the underlying binary representation when we have to. For example if we have a 6-bit system we know we only can represent 64 unique patterns. If we need more characters we'll need more bits.
+- Something that allows us to hide or forget underlying details is called an abstraction. Today we were sending text to each other but we know under the hood that means we're just sending electrical symbols back and forth. All the different layers we've explored in this chapter (binary numbers, decimal numbers, letters) allow us to ignore or hide the complexity of sending electric symbols. This makes it easy to quickly create systems like you did today and feel confident the underlying system will work.
