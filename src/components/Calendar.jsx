@@ -143,7 +143,7 @@ class Calendar extends React.Component {
   renderDay(day, index) {
     return (
       <CalendarDay key={`day-${index}`} >
-        <DateIndicator today={moment().startOf('day').isSame(day)}>
+        <DateIndicator today={this.props.today.isSame(day)}>
           {day.format("D")}
         </DateIndicator>
       </CalendarDay>
@@ -206,9 +206,9 @@ class Calendar extends React.Component {
 
     return (
       <CalendarWeekContainer key={`week-container-${index}`}>
-        <CalendarWeek key={`week-${index}`}>{week.map(this.renderDay)}</CalendarWeek>
-        {weekDatesLevels.map(l => (
-          <CalendarEventRow>
+        <CalendarWeek key={`week-${index}`}>{week.map(this.renderDay.bind(this))}</CalendarWeek>
+        {weekDatesLevels.map((l, i) => (
+          <CalendarEventRow key={`event-row-${i}`}>
             {l.map((d, i) => {
               if (d.empty) {
                 return <EmptyEvent durr={d.end.diff(d.start, 'days')} key={`empty-${i}`} /> 

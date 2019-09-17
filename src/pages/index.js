@@ -25,6 +25,7 @@ const IndexPage = ({
   >
     <Heading level={1}>Course Calendar</Heading>
     <Calendar
+      today={moment().startOf('day')}
       dates={edges.map(({ node: { frontmatter: { start, end, ...rest } } }) => ({
         start: moment(start).startOf('day'),
         end: moment(end).add(1, 'day').startOf('day'),
@@ -54,8 +55,8 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
-            start(formatString: "MMMM D YYYY")
-            end(formatString: "MMMM D YYYY")
+            start(formatString: "YYYY-MM-DD")
+            end(formatString: "YYYY-MM-DD")
             title
             path
           }
