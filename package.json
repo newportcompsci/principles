@@ -22,7 +22,7 @@
     "gatsby-source-filesystem": "^2.1.11",
     "gatsby-theme-mdx-deck": "^3.0.10",
     "gatsby-transformer-sharp": "^2.2.13",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mdx-deck": "^3.0.9",
     "moment": "^2.24.0",
     "prop-types": "^15.7.2",
